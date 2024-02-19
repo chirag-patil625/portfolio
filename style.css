@@ -1,0 +1,133 @@
+/* background */
+body {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+    color: #fff;
+    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(./common-bg.svg);
+    background-position: center;
+    height: 100vh;
+    min-height: 80rem;
+    max-height: 120rem;
+    position: relative;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+
+}
+
+
+/* h1 h2 */
+h1{
+    font: 1em sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #111;
+    font-weight: 700;
+}
+h2{
+  font: 1em sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #111;
+  font-weight: 700;
+}
+
+
+/* header */
+.header{
+    /* background-color: 	#7FFFD4; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background-color: white;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 1000;
+    
+}
+.mr-2{
+    width: 4rem;
+    height: 5rem;
+    margin-right: 10px;
+    overflow: hidden;
+    background: #7843e9;
+}
+.nav {
+  --bs-nav-link-color: black !important; /* Change to black */
+  --bs-nav-link-hover-color: #8A2BE2 !important; /* Change to voiletblue */
+}
+
+
+
+
+/* sidebar */
+.sidebar {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #333;
+    padding: 10px;
+  }
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .sidebar li {
+    margin-bottom: 20px;
+  }
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+  }
+  .sidebar a:hover {
+    color: #ccc;
+  }
+
+
+  /* form */
+  label{
+    color: black;
+    font-size: 1rem;
+  }
+  .form{
+    display: grid;
+    place-items: center; 
+    height: 100vh; 
+  }
+  .contact-form{
+    background-color: white; 
+    border-radius: 15px;
+    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 500px; 
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  @media screen and (max-width: 600px) {
+    .contact-form {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+  }
+  button,
+  input[type="text"],
+  input[type="email"],
+  textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
